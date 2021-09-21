@@ -1,0 +1,28 @@
+<body>
+  <div class="wrapper">
+    <div class="button">
+      <button id="hover">Hover HERE</button>
+    </div>
+    <div class="dropdown">
+      <ul>
+        <li><a href="#">item1</a></li>
+        <li><a href="#">item2</a></li>
+        <li><a href="#">item3</a></li>
+      </ul>
+    </div>
+  </div>
+  <style>
+    .dropdown {
+      display: none;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+ 
+  <script>
+    $(document).ready(function () {
+      $(".button").hover(function () {
+        $(".dropdown").slideToggle();
+      });
+    });
+  </script>
+</body>

@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>Question 4</title>
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"
+    ></script>
+    <style>
+      .submiton {
+        background-color: rgb(0, 255, 213);
+      }
+    </style>
+  </head>
+  <body>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("button").click(function () {
+          $('input[type="submit"]').attr("disabled", "True");
+        });
+      });
+    </script>
+    <center>
+      <input type="submit" class="submiton" />
+      <br />
+      <br />
+      <button>click here to disable submit button</button>
+    </center>
+  </body>
+</html>
+ 

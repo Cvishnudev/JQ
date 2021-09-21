@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+    <script type="text/javascript"src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
+    <title>Questin 7</title>
+</head>
+ 
+<body>
+    <button class="click-element">Click</button>
+</body>
+ 
+</html>
+ 
+<script>
+    $(document).ready(function () {
+        $(".click-element").click(function () {
+            $("body").append(`<button class="click-element">Next Click</button>`)
+        });
+    });
+</script>

@@ -1,0 +1,23 @@
+<html> 
+<head><script 
+src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> 
+</head> 
+<body> 
+<table id="table1"> 
+<tr><th>clm1</th><th>clm2</th><th></th></tr> 
+<tr><td>it1</td><td>it5</td><td><button 
+class="btnDelete">Delete</button></td></tr> 
+<tr><td>it2</td><td>it6</td><td><button 
+class="btnDelete">Delete</button></td></tr> 
+<tr><td>it3</td><td>it7</td><td><button class="btnDelete">Delete</button></td></tr> 
+<tr><td>it4</td><td>it8</td><td><button class="btnDelete">Delete</button></td></tr> 
+</table> 
+<script> 
+$(document).ready(function(){ 
+ $("#table1").on('click','.btnDelete',function(){ 
+ $(this).closest('tr').remove(); 
+ }); 
+}); 
+</script> 
+</body> 
+</html> 

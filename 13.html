@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
+  </head>
+ 
+  <body>
+    <div style="height: 20px">div1</div>
+    <div style="height: 40px">div2</div>
+    <div style="height: 100px">div3</div>
+    <div style="height: 80px">div4</div>
+  </body>
+</html>
+ 
+<script>
+  $(document).ready(function () {
+    getMaxHeight();
+  });
+ 
+  function getMaxHeight() {
+    let max = 0;
+    $("div").each(function (idx, e) {
+      max = Math.max($(e).height(), max);
+    });
+    alert(`Max Height: ${max}px`);
+  }
+</script>
+ 

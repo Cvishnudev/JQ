@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"
+    ></script>
+    <title>Question 8</title>
+  </head>
+ 
+  <body>
+    <button class="click-element">Click</button>
+  </body>
+</html>
+ 
+<script>
+  $(document).ready(function () {
+    $("body").on("click", ".click-element", function () {
+      $("body").append(`<button class="click-element">another Click</button>`);
+    });
+  });
+</script>

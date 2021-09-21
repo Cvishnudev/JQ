@@ -1,0 +1,26 @@
+<title>Question 6</title><hr>
+<h1>Replace Div with P tag</h1>
+<div>heaven</div>
+<p>hello</p>
+<p>World</p>
+<style>
+    div {
+    border: 2px solid blue;
+    color: red;
+    margin: 3px;
+  }
+  p{
+    border: 2px solid red;
+    color: blue;
+    margin: 3px;
+    cursor: pointer;
+  }
+ 
+ 
+</style>
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+<script>
+    $(document).click(function(){
+  $( "div").replaceWith($( "p" ));
+});
+</script>

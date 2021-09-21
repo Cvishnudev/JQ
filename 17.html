@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  </head>
+  <body>
+    <div style="display: flex; justify-content: center; margin-top: 100px">
+      <img style="width: 50%" src="" alt="" />
+    </div>
+  </body>
+</html>
+ 
+<script>
+  images = [
+    "https://images.unsplash.com/photo-1632250962253-90a9195bbc40?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1fHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    "https://images.unsplash.com/photo-1632231484562-3d2bed7e808d?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3fHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    "https://images.unsplash.com/photo-1632234509732-d72a9113f035?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyNHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+  ];
+  $(document).ready(function () {
+    index = 0;
+    setInterval(function () {
+      index = index % images.length;
+      $("img").attr("src", images[index]);
+      index++;
+    }, 500);
+  });
+</script>

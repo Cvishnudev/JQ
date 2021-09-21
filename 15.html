@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+    <head><script 
+        src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> 
+        </head> 
+<body>
+    <div class="content">
+    </div>
+</body>
+</html>
+ 
+<script>
+    $(document).ready(function (){
+        $.ajax("https://jsonplaceholder.typicode.com/posts")
+        .done(function(data){
+            data.forEach(post => {
+                $(".content").append(
+                    `<div>Title: ${post.title}</div>`
+                );
+            });
+            console.log(data);
+        }).fail(function(err){
+            console.log("Error Fetching Data");
+        });
+    });
+</script>
